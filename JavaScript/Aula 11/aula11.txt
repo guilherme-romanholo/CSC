@@ -1,0 +1,12 @@
+if (condição) {
+       true
+} else {
+      false
+} 
+
+na condição simples o else com o falso pode ser tirado
+ai fica só
+
+if (condição) {
+    true
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eita</title>
+</head>
+<body>
+    <div class="corpo">
+        <h1>Sistema de multas:</h1>
+        <label for="">Digite a sua velocidade em km/h no campo abaixo:</label><br/>
+        <input type="number" name="txtvel" id="txtvel">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res">
+
+        </div>
+    </div>    
+</body>
+<script>
+    function verificar() {
+        var txtv = document.querySelector('input#txtvel')
+        var res = document.querySelector('div#res')
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p>Sua velocidade é <strong>${vel}</strong> km/h.</p>` 
+        if (vel > 60){
+            res.innerHTML += '<p>Portanto você será <strong>MULTADO</strong>!</p>'
+        }
+        res.innerHTML += '<p>Dirija sempre com sinto de segunrança!</p>'
+    }
+      
+</script>
+</html>

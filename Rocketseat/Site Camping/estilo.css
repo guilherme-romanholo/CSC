@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+}
+html, body {
+    overflow: hidden;
+}
+/*    --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;   
+   */
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: 'header sec2'
+                         'sec1   sec2';                      
+}
+p {
+    font-size: 13px;
+}
+a {
+    color: #ffc632;
+    font-size: 13px;
+}
+a:hover {
+    color: #ffc532d2;
+}
+header {
+    grid-area: header;
+    background-color: #191816;
+    max-width: 50vw;
+    max-height: 10vh;
+
+}
+#logo{
+    height: 10vh;
+    width: 8vw;
+    padding-left: 2vw;
+}
+
+#sec1 {
+    grid-area: sec1;
+    background-color: #191816;
+    height: 90vh;
+    width: 50vw;
+    align-self: center;
+}
+#sec2 {
+    grid-area: sec2;
+    background-image: url(images/side-image.jpg);
+    background-position: center; 
+    height: 100vh;
+    width: 50vw;   
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    border: none;
+    background-color: #24221f;
+    padding: 50px 50px;
+    margin: 50px 50px;
+    padding-bottom: 100px;
+}
+div#mail{
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 8px;
+    border-color: #afb6c2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+div#all {
+    grid-column: 2;
+}
+div#faca-login {
+    display: flex;
+    gap: 8px;
+}
+div#faca-login, h2 {
+    color: #d4ccb6;
+}
+div#senha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #afb6c2;
+    padding: 8px;
+    border-radius: 5px;
+}
+label, p {
+    color: #afb6c2;
+}
+input[type=email], input[type=password]{
+    background-color: #24221f;
+    border: none;
+    outline: 0;
+    color: #afb6c2;
+}
+input[type=checkbox] {
+    background-color: #24221f;
+}
+div#esqueci {
+    display: flex;
+    padding-top:15px ;
+    justify-content: space-between;
+}
+
+div#btn {
+    padding-top:10px ;
+    padding-left: 15px ;
+}
+div#fim {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+div#desc {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input[type=button] {
+    padding: 15px 105px; 
+    background-color: #ffc632;
+    border-radius: 5px;
+    border-style: hidden;
+    
+}
+input[type=button]:hover {
+    cursor: pointer;
+    background-color: #ffc532d2;
+}
+

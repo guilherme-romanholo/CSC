@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa</title>
+    <style>
+        h1{
+            color: azure;
+        }
+        body{
+            background-color: rgb(52, 165, 150);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s)
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s} `)
+        //caso eu coloque um numero quebrado tem que ser parseFloat
+        //atualmente no JS pode usar só Number(n)
+        //para converter em string pode usar String(n) ou n.toString()
+        //template string `Eu estou aprendendo ${s}`
+        //s.length quantos caracteres a string tem
+        //s.toUpperCase() tudo para maiúsculas 
+        //s.toLowerCase() tudo para minúsculas
+    </script>
+</body>
+</html>
