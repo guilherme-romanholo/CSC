@@ -1,2 +1,0 @@
-Quando é assim não precisa guardar as respostas pra printar no final do programa
-É só printar a resposta depois da opção
